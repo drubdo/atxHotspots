@@ -6,6 +6,7 @@ import Food from "./Food";
 import Attractions from "./Attractions";
 import Hotels from "./Hotels";
 import Jumbotron from "react-bootstrap/Jumbotron";
+import SearchLocation from "./SearchLocation"
 
 function HomePage(props) {
   const viewDetails = () => {
@@ -16,6 +17,7 @@ function HomePage(props) {
   return (
     <div>
         <Container>
+          <SearchLocation />
           <Row className="justify-content-md-center" style={{paddingTop:"200px"}}>
             <Col lg={6}>
               <Food />

@@ -22,7 +22,7 @@ function FoodDetails(props) {
                     "currency": "USD",
                     "sort": "recommended",
                     "lunit": "km",
-                    "location_id": "30196"
+                    "location_id": localStorage.getItem("location_id") || 30196
                 }
             })
 

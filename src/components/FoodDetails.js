@@ -24,7 +24,7 @@ function FoodDetails(props) {
                     "limit": "30",
                     "currency": "USD",
                     "lang": "en_US",
-                    "location_id": "30196"
+                    "location_id": localStorage.getItem("location_id") || 30196
                 }
             })
 

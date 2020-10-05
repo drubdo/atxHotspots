@@ -24,7 +24,7 @@ function HotelDetails(props) {
                 "order":"asc",
                 "lang":"en_US",
                 "sort":"recommended",
-                "location_id":"30196",
+                "location_id":localStorage.getItem("location_id") || 30196,
                 "adults":"1",
                 "checkin":"2020-12-01",
                 "rooms":"1",
