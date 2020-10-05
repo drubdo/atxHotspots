@@ -3,26 +3,35 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Food from "./Food";
+import Attractions from "./Attractions";
+import Hotels from "./Hotels";
 import Jumbotron from "react-bootstrap/Jumbotron";
 
 function HomePage(props) {
   const viewDetails = () => {
     console.log(props, "props");
-    window.location.href="/foodDetails"
+    window.location.href = "/foodDetails"
   };
 
   return (
     <div>
-      <Jumbotron>
         <Container>
-          <Row className="justify-content-md-center">
+          <Row className="justify-content-md-center" style={{paddingTop:"200px"}}>
             <Col lg={6}>
               <Food />
             </Col>
-            <Col lg={6}>Sport</Col>
+            <Col lg={6}>
+              <Row>
+                <Col lg={12} style={{marginBottom:"15px"}}>
+                  <Attractions />
+                </Col>
+                <Col lg={12}>
+                  <Hotels />
+                </Col>
+              </Row>
+            </Col>
           </Row>
         </Container>
-      </Jumbotron>
     </div>
   );
 }

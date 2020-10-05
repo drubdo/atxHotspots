@@ -1,6 +1,18 @@
 .App {
   text-align: center;
 }
+body {
+  background-color:#7FDBFF !important;
+}
+.container {
+  padding:25px
+}
+
+.shadow {
+	-webkit-box-shadow: 0 7px 4px #777;
+	-moz-box-shadow: 0 7px 4px #777;
+	box-shadow: 0 7px 4px #777;
+}
 
 .App-logo {
   height: 40vmin;
