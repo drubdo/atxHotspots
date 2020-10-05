@@ -1,21 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-
-
+import React from "react";
+import "./App.css";
+import { Switch, Route } from "react-router-dom";
+import HomePage from "./components/HomePage";
+import FoodDetails from "./components/FoodDetails";
 
 function App() {
   return (
     <div>
-      <Container>
-        <Row lg={6}>
-          <Col>Food</Col>
-          <Col>Sport</Col>
-        </Row>
-      </Container>
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+        <Route exact path="/FoodDetails" component={FoodDetails} />
+      </Switch>
     </div>
   );
 }
